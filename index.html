@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/logo.jpg">
+    <title>Dream's up circuit</title>
+</head>
+<body> 
+    <div class="backgroundcolor"></div>
+    <header>
+        <div class="header-title-container">
+            <h1 id="header-title">Dream's up <br>circuit</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home"><b>Home</b></a></li>
+                <li><a href="#about"><b>About</b></a></li>
+                <li><a href="#notes"><b>Notes</b></a></li>
+                <li><a href="#queries"><b>Roadmap Queries</b></a></li>
+                <li><a href="#community"><b>Join Community</b></a></li>
+                <li><a href="contact.html" target="_blank"><b>Contact Form</b></a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Dream's up circuit</h1>
+        <p>Your go-to platform for academic resoures, tech ideas, and community engagement. Explore notes, coding platforms, and much more below!</p>
+    </section>
+
+    <section class="notes-grid">
+        <section id="notes">
+            <div class="note">
+                <img src="img/img1.png" alt="Notes">
+                <h4>Download Notes Here</h4>
+                <a href="https://drive.google.com/drive/folders/110Ptcn2ZJtSjfcuBz3hGaklq1f8i0UQo?usp=sharing" target="_blank" rel="noreferrer">
+                    <button>
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </a>
+            </div>
+        </section>
+            
+            <div class="note">
+                <img src="img/img2.png" alt="Question Papers">
+                <h4>Download Question Papers</h4>
+                <a href="https://drive.google.com/drive/folders/10vxN8moO6BV_1P7Ya7hKtZHC3ZZl6qjp?usp=sharing" target="_blank" rel="noreferrer">
+                    <button>
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </a>
+            </div>
+            
+            <section id="queries">
+                <div class="note">
+                    <img src="img/img3.png" alt="Roadmap Queries">
+                    <h4>Roadmap Queries</h4>
+                    <a href ="https://roadmap.sh/" target="_blank" rel="noreferrer" >
+                        <button>
+                            <i class="fas fa-question-circle"></i> Click Here
+                        </button>
+                    </a>    
+                 </div>
+            </section>
+
+            <div class="note">
+                <img src="img/img4.png" alt="Coding Platforms">
+                <h4>Visit Coding Platform</h4>
+                <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">
+                    <button>
+                        <i class="fas fa-code"></i> Go to w3schools
+                    </button>
+                </a>
+            </div>
+
+            <div class="note">
+                <img src="img/img5.png" alt="Coding Question Sets">
+                <h4>View Coding Question Sets</h4>
+                <a href="#" rel="noreferrer">
+                    <button>
+                        <i class="fas fa-book"></i> View Sets
+                    </button>
+                </a>
+            </div>
+
+            <section id="community">
+                <div class="note">
+                    <img src="img/img6.png" alt="Community">
+                    <h4>Join Our Community</h4>
+                    <a href="https://discord.gg/prFDwQPa" target="_blank" rel="noreferrer">
+                        <button>
+                            <i class="fas fa-users"></i> Join Discord
+                        </button>
+                    </a>
+                </div>
+            </section>
+
+            <div class="note">
+                <img src="img/img7.png" alt="Explore Tech Ideas">
+                <h4>Explore Tech Ideas</h4>
+                <a href="#" rel="noreferrer">
+                    <button>
+                        <i class="fas fa-lightbulb"></i> Explore Ideas
+                    </button>
+                </a>
+            </div>
+
+            <div class="note">
+                <img src="img/img8.png" alt="Upcoming Events Information">
+                <h4>Upcoming Events</h4>
+                <a href="#" rel="noreferrer">
+                    <button>
+                        <i class="fas fa-calendar-alt"></i> View Events
+                    </button>
+                </a>
+            </div>
+    </section>
+
+    
+    <section id="about">
+        <h1>About Us</h1>
+        <p>We are a community of tech enthusiasts sharing academic resources, hosting tech events, and engaging in discussions about the latest trends in technology. Join us to explore more!</p>
+    </section>
+    
+    <footer>
+        <h2>Dream's up circuit</h2> 
+        <p>Copyright | &copy; 2024 All right reserved</p>
+        <p>
+            <b><h3>
+                <a class="terms" href="terms.html" target="_blank">Terms of Service</a> |
+                <a class="privacy" href="privacy.html" target="_blank">Privacy Policy</a>
+            </h3></b>
+        </p>
+    </footer>
+
+    <div id="scrollToTop"><i class="fas fa-arrow-up"></i></div>
+    <!-- <button id="scrollToTop">↑</button> -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("open");
+        }
+    </script> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
