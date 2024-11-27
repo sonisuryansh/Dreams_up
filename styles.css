@@ -79,23 +79,6 @@ nav ul.nav-links li a:hover {
     }
 }
 
-
-body.dark-mode {
-    background-color: #222;
-    color: white;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-body.dark-mode nav ul.nav-links {
-    background-color: #333;
-}
-
-body.dark-mode button {
-    background-color: #555;
-    color: white;
-}
-
-
 #home, #about {
     padding: 50px;
     color: white;
@@ -230,5 +213,138 @@ footer {
 
 footer a.terms, footer a.privacy {
     color: wheat;
+    text-decoration: none;
+}
+
+
+#contributors {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contributors h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contributors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contributor-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contributor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contributor-card h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.contributor-card p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contributor-card button {
+    background-color: #0077b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contributor-card button:hover {
+    background-color: #005582;
+    transform: scale(1.05);
+}
+
+.contributor-card button i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-content ul li {
+    margin: 10px 0;
+}
+
+.modal-content ul li a {
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.modal-content ul li a:hover {
+    color: #005582;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: black;
+}
+
+.git {
     text-decoration: none;
 }
