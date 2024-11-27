@@ -71,11 +71,23 @@
             <div class="note">
                 <img src="img/img4.png" alt="Coding Platforms">
                 <h4>Visit Coding Platform</h4>
-                <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">
-                    <button>
-                        <i class="fas fa-code"></i> Go to w3schools
-                    </button>
-                </a>
+                <button onclick="openModal()">
+                    <i class="fas fa-code"></i> Click Here
+                </button>
+            </div>
+
+            <div id="codingPlatformsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">&times;</span>
+                    <h2>Coding Platforms</h2>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">W3Schools</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer">GeeksforGeeks</a></li>
+                        <li><a href="https://www.hackerrank.com/" target="_blank" rel="noreferrer">HackerRank</a></li>
+                        <li><a href="https://www.leetcode.com/" target="_blank" rel="noreferrer">LeetCode</a></li>
+                        <li><a href="https://www.codechef.com/" target="_blank" rel="noreferrer">CodeChef</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="note">
@@ -103,7 +115,7 @@
             <div class="note">
                 <img src="img/img7.png" alt="Explore Tech Ideas">
                 <h4>Explore Tech Ideas</h4>
-                <a href="#" rel="noreferrer">
+                <a href="tech.html" target="_blank" rel="noreferrer">
                     <button>
                         <i class="fas fa-lightbulb"></i> Explore Ideas
                     </button>
@@ -113,7 +125,7 @@
             <div class="note">
                 <img src="img/img8.png" alt="Upcoming Events Information">
                 <h4>Upcoming Events</h4>
-                <a href="#" rel="noreferrer">
+                <a href="events.html" target="_blank" rel="noreferrer">
                     <button>
                         <i class="fas fa-calendar-alt"></i> View Events
                     </button>
@@ -121,11 +133,59 @@
             </div>
     </section>
 
-    
     <section id="about">
         <h1>About Us</h1>
         <p>We are a community of tech enthusiasts sharing academic resources, hosting tech events, and engaging in discussions about the latest trends in technology. Join us to explore more!</p>
     </section>
+    
+
+    <section id="contributors">
+        <h2>Meet Our Contributors</h2>
+        <div class="contributors">
+            <div class="contributor-card">
+                <h4>Suryansh Soni</h4>
+                <p><b>Lead Designer and Developer</b></p> <p>He is responsible for creating and maintaining the website's user interface and ensuring smooth functionality.</p>
+                <a href="https://linkedin.com/in/sonisuryansh/" target="_blank" rel="noreferrer">
+                    <button>
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    </button>
+                </a><br><br>
+                <a class="git" href="https://github.com/sonisuryansh" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+            </div>
+            <div class="contributor-card">
+                <h4>Abhikalp Shikhar</h4>
+                <p><b>Site Manager</b></p> <p> He oversees the entire website workflow, ensuring timely updates and managing essential resources effectively.</p>
+                <a href="https://www.linkedin.com/in/abhikalp-shikhar-a093b4294/" target="_blank" rel="noreferrer">
+                    <button>
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    </button>
+                </a><br><br>
+                <a class="git" href="https://github.com/Abhikalp47" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+            </div>
+            <div class="contributor-card">
+                <h4>Rudra Pratap Singh</h4>
+                <p><b>Content Strategist and Researcher</b></p><p> He specializes in curating meaningful content and conducting research to keep the platform resourceful.</p>
+                <a href="https://www.linkedin.com/in/rudra-pratap-singh-52bab1288" target="_blank" rel="noreferrer">
+                    <button>
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    </button>
+                </a><br><br>
+                <a class="git" href="https://github.com/rudrapratap592005" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+            </div>
+            <div class="contributor-card">
+                <h4>Shobhit Kumar</h4>
+                <p><b>Site Designer</b></p> <p>He focuses on designing the website layout, ensuring a clean and visually appealing experience for users.</p>
+                <br>
+                <a href="https://www.linkedin.com/in/shobhit-kumar1437/" target="_blank" rel="noreferrer">
+                    <button>
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    </button>
+                </a><br><br>
+                <a class="git" href="https://github.com/ShobhitKumar1437" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+            </div>
+        </div>
+    </section>
+    
     
     <footer>
         <h2>Dream's up circuit</h2> 
@@ -139,7 +199,6 @@
     </footer>
 
     <div id="scrollToTop"><i class="fas fa-arrow-up"></i></div>
-    <!-- <button id="scrollToTop">↑</button> -->
     <script>
         function toggleMenu() {
             document.querySelector(".nav-links").classList.toggle("open");
@@ -149,5 +208,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
