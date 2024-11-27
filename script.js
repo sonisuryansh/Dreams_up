@@ -18,3 +18,17 @@ document.addEventListener("DOMContentLoaded", function() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 });
+
+function openModal() {
+    document.getElementById("codingPlatformsModal").style.display = "block";
+}
+function closeModal() {
+    document.getElementById("codingPlatformsModal").style.display = "none";
+}
+window.onclick = function(event) {
+    const modal = document.getElementById("codingPlatformsModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
